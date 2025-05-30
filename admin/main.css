@@ -1,0 +1,344 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#222831;
+border-right:1px solid #e5e5e5;
+position:fixed;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+font-family: 'Roboto', sans-serif;
+}
+
+.main-menu>ul {
+margin:3px 0px;
+
+}
+
+.stats-box {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.main-menu li {
+    margin-bottom: 5px;
+position:relative;
+display:block;
+width:250px;
+
+border-radius: 5px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#ffffff;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#00adb5;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+
+/* Add this CSS code to your existing stylesheet */
+.subnav.active {
+    display: block;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #222831;
+    width: 230px;
+    z-index: 1001;
+}
+
+
+
+.main-menu .has-subnav .subnav li {
+    display: block;
+    width: 100%;
+}
+
+.main-menu .has-subnav .subnav li a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-menu .has-subnav .subnav li a:hover {
+    background-color: #00adb5;
+    border-radius: 10px;
+}
+
+/* Add this CSS code to your existing stylesheet */
+.subnav li a {
+    background-color: #222831; /* Background color for submenu buttons */
+    color: #fff; /* Text color for submenu buttons */
+    display: block;
+    padding: 10px;
+    margin-left: 60px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.subnav li a:hover {
+    background-color: #ffffff; /* Background color on hover */
+}
+
+.welcome-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    
+
+}
+
+/* Add this CSS code to your existing stylesheet or create a new one */
+
+/* Add this CSS code to your existing stylesheet or create a new one */
+
+/* Add this CSS code to your existing stylesheet or create a new one */
+
+.stats-container {
+    float: right;
+    margin-right: 50px; /* Adjusted margin */
+    margin-top: 20px;
+    display: flex; /* Display flex to align items horizontally */
+}
+
+.stats-box {
+    text-align: center;
+    background-color:#00adb5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .10);
+    margin-right: 20px; /* Add some space between the boxes */
+    transition: transform 0.3s ease; /* Add transition */
+}
+.stats-box:hover {
+    transform: translateY(-5px); /* Lift effect */
+}
+.stats-box:last-child {
+    margin-right: 0; /* Remove margin for the last box */
+}
+
+.stats-box h3 {
+    margin-bottom: 10px;
+}
+
+.stats-box p {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.sorting-options {
+    position: absolute;
+    top: 230px; /* Adjust as needed */
+    right: 20px;
+    z-index: 999;
+    background-color: #fff; /* Set background color */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for better visibility */
+}
+.sorting-options form {
+    display: flex;
+    align-items: center;
+}
+.sorting-options label {
+    margin-right: 10px;
+}
+.sorting-options select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.sorting-options button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #00adb5;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.area {
+    float: left;
+    background: #e2e2e2;
+    width: calc(100% - 60px); /* Ensure content doesn't overlap */
+    padding-left: 20px;
+    margin-left: 60px; /* Align content to the right of the sidebar */
+}
+/* Table Styling */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 50px; /* Adjust for sidebar */
+    justify-content: center;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+}
+
+td img {
+    border-radius: 4px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3333;
+}
+
+/* Hover Effect for Rows */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Table Caption */
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f2f2f2;
+    text-align: left;
+}
